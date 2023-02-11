@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="index.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <center class="mt-5 px-5 py-3 fs-1 fw-bold bg-success text-white">Simple Calculator</center>
+    <div class="calculator d-flex alight-items-center justify-content-center m-5">
+        <table style="background-color: pink; border-radius: 10px;">
+            <form name="form">
+                <tr>
+                    <td colspan="4"><input class="space mt-5 mb-2 ms-5 px-5 py-3 border-radius-10" id="result"></td>
+                    <td><input type="button" value='back' class="btn btn-danger px-5 py-2 mt-5 border" onclick="back()"/></td>
+                </tr>
+                
+                </form>
+                <tr>
+                    <td><input type="button" value='x^2' class="btn btn-info px-5 py-2 m-2 border" onclick="square()"/></td>
+                    <td><input type="button" value='1' class="btn btn-warning px-5 py-2 m-2 border" onclick="display(1)"/></td>
+                    <td><input type="button" value='2' class="btn btn-warning px-5 py-2 m-2 border" onclick="display(2)"/></td>
+                    <td><input type="button" value='3' class="btn btn-warning px-5 py-2 m-2 border" onclick="display(3)"/></td>
+                    <td><input type="button" value='/' class="btn btn-info px-5 py-2 m-2 border" onclick="display('/')"/></td>
+                    <td><input type="button" value='(' class="btn btn-info px-5 py-2 m-2 border" onclick="display('(')"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value='!' class="btn btn-info px-5 py-2 m-2 border" onclick="factorial()"/></td>
+                    <td><input type="button" value='4' class="btn btn-warning px-5 py-2 m-2 border" onclick="display(4)"/></td>
+                    <td><input type="button" value='5' class="btn btn-warning px-5 py-2 m-2 border" onclick="display(5)"/></td>
+                    <td><input type="button" value='6' class="btn btn-warning px-5 py-2 m-2 border" onclick="display(6)"/></td>
+                    <td><input type="button" value='-' class="btn btn-info px-5 py-2 m-2 border" onclick="display('-')"/></td>
+                    <td><input type="button" value=')' class="btn btn-info px-5 py-2 m-2 border" onclick="display(')')"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value='%' class="btn btn-info px-5 py-2 m-2 border" onclick="percentage()"/></td>
+                    <td><input type="button" value='7' class="btn btn-warning px-5 py-2 m-2 border" onclick="display(7)"/></td>
+                    <td><input type="button" value='8' class="btn btn-warning px-5 py-2 m-2 border" onclick="display(8)"/></td>
+                    <td><input type="button" value='9' class="btn btn-warning px-5 py-2 m-2 border" onclick="display(9)"/></td>
+                    <td><input type="button" value='+' class="btn btn-info px-5 py-2 m-2 border" onclick="display('+')"/></td>
+                    <td><input type="button" class="btn btn-danger px-5 py-2 m-2" value=C onclick="clearScreen()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value='square root' class="btn btn-info px-4 py-2 m-2 border " onclick="squareRoot()"/></td>
+                    <td><input type="button" value='0' class="btn btn-warning px-5 py-2 m-2 border" onclick="display('0')"/></td>
+                    <td><input type="button" value="=" class="btn btn-success px-5 py-2 m-2 border" onclick="calculate()"/></td>
+                    <td><input type="button" value='*' class="btn btn-info px-5 py-2 m-2 border" onclick="display('*')"/></td>
+                </tr>
+        </table>
+    </div>
+    <!-- <div><center><ol class="fs-2 fw-bold">History</ol></center></div> -->
+    <script src="index.js"></script>
+</body>
+</html>
